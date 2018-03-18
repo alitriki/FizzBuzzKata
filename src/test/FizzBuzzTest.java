@@ -23,4 +23,11 @@ public class FizzBuzzTest {
         String value = fizzBuzz.evaluate(2);
         assertEquals("2",value);
     }
+
+    @Test
+    public void EvaluateTreeReturnsBizz(){
+        String value = fizzBuzz.evaluate(3);
+        assertEquals("Bizz",value);
+    }
+
 }
