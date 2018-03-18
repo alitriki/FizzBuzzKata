@@ -36,4 +36,10 @@ public class FizzBuzzTest {
         assertEquals("Buzz",value);
     }
 
+    @Test
+    public void EvaluateSixReturnsFizz(){
+        String value = fizzBuzz.evaluate(6);
+        assertEquals("Fizz",value);
+    }
+
 }
