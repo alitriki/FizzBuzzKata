@@ -1,6 +1,6 @@
 public class FizzBuzz {
 
     public String evaluate(int number) {
-        return "1";
+        return String.valueOf(number);
     }
 }

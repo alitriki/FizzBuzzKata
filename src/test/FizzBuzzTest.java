@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
 
-    FizzBuzz fizzBuzz;
+    private FizzBuzz fizzBuzz;
 
     @Before
     public void CreateCounter(){
@@ -16,5 +16,11 @@ public class FizzBuzzTest {
     public void EvaluateOneReturnsOne(){
         String value = fizzBuzz.evaluate(1);
         assertEquals("1",value);
+    }
+
+    @Test
+    public void EvaluateTwoReturnsTwo(){
+        String value = fizzBuzz.evaluate(2);
+        assertEquals("2",value);
     }
 }
