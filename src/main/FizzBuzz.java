@@ -1,6 +1,12 @@
 public class FizzBuzz {
 
-    public String evaluate(int number) {
+    public static void main(String[] args) {
+        for(int i=1;i<=100; i++){
+            System.out.print(evaluate(i)+ " ");
+        }
+    }
+
+    public static String evaluate(int number) {
         String result;
         if(isMultipleOf(number, 3) && isMultipleOf(number, 5))
             result = "FizzBuzz";
@@ -14,7 +20,7 @@ public class FizzBuzz {
         return result;
     }
 
-    private boolean isMultipleOf(int number, int divisor) {
+    private static boolean isMultipleOf(int number, int divisor) {
         return number % divisor == 0;
     }
 
