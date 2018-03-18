@@ -42,4 +42,10 @@ public class FizzBuzzTest {
         assertEquals("Fizz",value);
     }
 
+    @Test
+    public void EvaluateTenReturnsBuzz(){
+        String value = fizzBuzz.evaluate(10);
+        assertEquals("Buzz",value);
+    }
+
 }

@@ -2,9 +2,9 @@ public class FizzBuzz {
 
     public String evaluate(int number) {
         String result;
-        if(IsAMultipleOfThree(number))
+        if(isMultipleOf(number, 3))
             result = "Fizz";
-        else if(number==5)
+        else if(isMultipleOf(number, 5))
             result = "Buzz";
         else
             result = String.valueOf(number);
@@ -12,7 +12,8 @@ public class FizzBuzz {
         return result;
     }
 
-    private boolean IsAMultipleOfThree(int number) {
-        return number % 3 == 0;
+    private boolean isMultipleOf(int number, int divisor) {
+        return number % divisor == 0;
     }
+
 }
