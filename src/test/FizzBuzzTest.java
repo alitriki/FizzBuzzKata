@@ -55,7 +55,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void EvaluatethirtyReturnsFizzBuzz(){
+    public void EvaluateThirtyReturnsFizzBuzz(){
         String value = fizzBuzz.evaluate(30);
         assertEquals("FizzBuzz",value);
     }
