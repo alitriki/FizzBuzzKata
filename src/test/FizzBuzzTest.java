@@ -25,9 +25,15 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void EvaluateTreeReturnsBizz(){
+    public void EvaluateTreeReturnsFizz(){
         String value = fizzBuzz.evaluate(3);
-        assertEquals("Bizz",value);
+        assertEquals("Fizz",value);
+    }
+
+    @Test
+    public void EvaluateFiveReturnsBuzz(){
+        String value = fizzBuzz.evaluate(5);
+        assertEquals("Buzz",value);
     }
 
 }
