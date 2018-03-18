@@ -48,4 +48,16 @@ public class FizzBuzzTest {
         assertEquals("Buzz",value);
     }
 
+    @Test
+    public void EvaluateFifteenReturnsFizzBuzz(){
+        String value = fizzBuzz.evaluate(15);
+        assertEquals("FizzBuzz",value);
+    }
+
+    @Test
+    public void EvaluatethirtyReturnsFizzBuzz(){
+        String value = fizzBuzz.evaluate(30);
+        assertEquals("FizzBuzz",value);
+    }
+
 }
